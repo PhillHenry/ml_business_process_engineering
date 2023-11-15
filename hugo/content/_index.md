@@ -8,3 +8,4 @@ draft = true
 
 Making ML easy.
 
+[About](about/index.html)
