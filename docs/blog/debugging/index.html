@@ -4,12 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Debugging - ML Business Processes</title>
+    <title>MLOps: debugging a pipeline - ML Business Processes</title>
 
     
     
-    <meta name="description" content="MLOps: debugging a pipeline The domain Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM.
-The problem Everything was fine with our pipeline for six months before it started to blow up with:" />
+    <meta name="description" content="The domain Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM.
+The problem Everything was fine with our pipeline for six months before it started to blow up with:
+Caused by: org.apache.spark.SparkException: Failed to execute user defined function(GeneralizedLinearRegressionModel$$Lambda$4903/0x0000000101ee9840: (struct&lt;type:tinyint,size:int,indices:array&lt;int&gt;,values:array&lt;double&gt;&gt;, double) =&gt; double)" />
     <meta name="author" content="" />
     
 
@@ -55,7 +56,7 @@ The problem Everything was fine with our pipeline for six months before it start
         <div class="max-w:700 w:full box:content-box">
 <article class="box:border-box pt:32">
     <header class="mb:32">
-        <div class="font:40 font:extrabold">Debugging</div>
+        <div class="font:40 font:extrabold">MLOps: debugging a pipeline</div>
         <div class="mt:16 f:fade-60">
             <time>Nov 17, 2023</time>
             </div>
@@ -96,8 +97,7 @@ The problem Everything was fine with our pipeline for six months before it start
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><h1 id="mlops-debugging-a-pipeline">MLOps: debugging a pipeline</h1>
-<h3 id="the-domain">The domain</h3>
+"><h3 id="the-domain">The domain</h3>
 <p>Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM.</p>
 <h3 id="the-problem">The problem</h3>
 <p>Everything was fine with our pipeline for six months before it started to blow up with:</p>
