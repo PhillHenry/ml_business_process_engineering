@@ -11,7 +11,7 @@
 
     <meta name="description" content="Success in Machine Learning">
     
-    <link rel="alternate" type="application/rss+xml" href="https://example.org/blog/index.xml" title="Machine Learning Business Processes">
+    <link rel="alternate" type="application/rss+xml" href="./blog/index.xml" title="Machine Learning Business Processes">
     <meta name="generator" content="Hugo 0.120.4">
 
     
@@ -32,7 +32,7 @@
     <meta property="og:title" content="Blogs" />
 <meta property="og:description" content="Success in Machine Learning" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/blog/" />
+<meta property="og:url" content="./blog/" />
 
 
     
@@ -44,7 +44,7 @@
 
 				
           <header id="header">
-            <h1><a href="https://example.org/">Machine Learning Business Processes</a></h1>
+            <h1><a href=".">Machine Learning Business Processes</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -79,13 +79,13 @@
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="https://example.org/blog/debugging/">MLOps: debugging a pipeline</a></h2>
+    <h2><a href="./blog/debugging/">MLOps: debugging a pipeline</a></h2>
     <time class="icon fa-clock-o">26.11.2022 11:34</time>
-    <p>The domain Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM.
+    <p>Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM (Generalized Linear Models).
 The problem Everything was fine with our pipeline for six months before it started to blow up with:
-Caused by: org.apache.spark.SparkException: Failed to execute user defined function(GeneralizedLinearRegressionModel$$Lambda$4903/0x0000000101ee9840: (struct&lt;type:tinyint,size:int,indices:array&lt;int&gt;,values:array&lt;double&gt;&gt;, double) =&gt; double)</p>
+Caused by: org.</p>
     
-    <a href="https://example.org/blog/debugging/">Read more…</a>
+    <a href="./blog/debugging/">Read more…</a>
     
 	</div>
 </section>
@@ -93,13 +93,13 @@ Caused by: org.apache.spark.SparkException: Failed to execute user defined funct
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="https://example.org/blog/mlops_tips/">Tips for effective MLOps</a></h2>
+    <h2><a href="./blog/mlops_tips/">Tips for effective MLOps</a></h2>
     <time class="icon fa-clock-o">19.04.2022 11:48</time>
     <p>Some miscellaneous tips I&rsquo;ve discovered after over a year of being hands-on with a clinical ETL pipeline.
 Technology Set up a local dev environment (Git, Pip, IDE of choice, Python environment etc). Being able to test locally cannot be more important. For instance, I&rsquo;ve been using Palantir&rsquo;s Foundry but since it&rsquo;s just a wrapper around Spark, you can have a full, locally run, test suite using PySpark.
 If you can&rsquo;t get the data on your laptop (GDPR etc), use simulated data.</p>
     
-    <a href="https://example.org/blog/mlops_tips/">Read more…</a>
+    <a href="./blog/mlops_tips/">Read more…</a>
     
 	</div>
 </section>
@@ -107,12 +107,12 @@ If you can&rsquo;t get the data on your laptop (GDPR etc), use simulated data.</
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="https://example.org/blog/debugging2/">MLOps debugging: an example</a></h2>
+    <h2><a href="./blog/debugging2/">MLOps debugging: an example</a></h2>
     <time class="icon fa-clock-o">11.04.2022 11:43</time>
     <p>In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.
 So, having trained the GLMs, we fit the same data and calculate the average probabilities for each cohort. We then bastardise the data to create the counterfactuals For example, socioeconomic status is of interest so let&rsquo;s make everybody the same level (counterfactual) then make our predictions again and compare with the factual results.</p>
     
-    <a href="https://example.org/blog/debugging2/">Read more…</a>
+    <a href="./blog/debugging2/">Read more…</a>
     
 	</div>
 </section>
