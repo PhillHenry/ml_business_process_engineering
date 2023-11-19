@@ -45,7 +45,7 @@ body_is_markdown = true
 enable = true
 
 [[params.two.section]]
-img = "img/pic01.jpg"
+img = "img/clockwork.jpg"
 img_alt = "blurry background: white/grey"
 title = ''
 body = '''
