@@ -1,102 +1,87 @@
-<!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<!DOCTYPE HTML>
 
-    <title>MLOps debugging: an example - ML Business Processes</title>
+<html lang="en">
+	<head>
+	  <title>MLOps debugging: an example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="referrer" content="origin">
+
+	
+
+    <meta name="description" content="Success in Machine Learning">
+    
+    <meta name="generator" content="Hugo 0.120.4">
 
     
+<link rel="stylesheet" href="/css/main.min.09224b467f2c555409865abcdf41f1274d28443d62fe5328ebcd73347b9dd264ae5252ade861e8ea1e4e114804b96f4720a7117f83b8e24922fd71f04afbbb08.css" integrity="sha512-CSJLRn8sVVQJhlq830HxJ00oRD1i/lMo681zNHud0mSuUlKt6GHo6h5OEUgEuW9HIKcRf4O44kki/XHwSvu7CA==">
+
+
+<noscript><link rel="stylesheet" href="/css/noscript.min.e6f1ba19697eecfddfbf83ff7181b98181998f163d7005f6ae923451556bf85bef357f43dffe1522b92c1efab7fb38441f479e39b7a03e4313a8ef12b0b01f65.css" integrity="sha512-5vG6GWl&#43;7P3fv4P/cYG5gYGZjxY9cAX2rpI0UVVr&#43;FvvNX9D3/4VIrksHvq3&#43;zhEH0eeObegPkMTqO8SsLAfZQ=="></noscript>
+
+
+
+
+
     
-    <meta name="description" content="In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MLOps debugging: an example"/>
+<meta name="twitter:description" content="In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.
+So, having trained the GLMs, we fit the same data and calculate the average probabilities for each cohort. We then bastardise the data to create the counterfactuals For example, socioeconomic status is of interest so let&rsquo;s make everybody the same level (counterfactual) then make our predictions again and compare with the factual results."/>
+
+    <meta property="og:title" content="MLOps debugging: an example" />
+<meta property="og:description" content="In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.
 So, having trained the GLMs, we fit the same data and calculate the average probabilities for each cohort. We then bastardise the data to create the counterfactuals For example, socioeconomic status is of interest so let&rsquo;s make everybody the same level (counterfactual) then make our predictions again and compare with the factual results." />
-    <meta name="author" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/blog/debugging2/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-04-11T11:43:05+00:00" />
+<meta property="article:modified_time" content="2022-04-11T11:43:05+00:00" />
+
+
     
+	</head>
+	<body class="landing is-preload">
 
-    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
-    <script src="https://unpkg.com/@master/style@1.5.0"></script>
-    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
-    <script src="https://unpkg.com/master-styles-group"></script>
-    <script src="https://unpkg.com/themes.js"></script>
-    <script>window.themes = window.themes || new window.Themes()</script>
+		
+			<div id="page-wrapper">
 
-    <style>
-        :root {
-            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        }
-    </style></head>
-<body class="bg:fade-84@dark font:fade-16@dark font:sans">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
-    <div class="
-        h:full
-        w:full
-        max-w:1200
-        mx:auto
-        px:32
-        d:flex
-        align-items:center
-    ">
-        <div>
-            <a href="/" class="mr-3 font:extralight">
-              
-              ML Business Processes
-              
-            </a>
-        </div>
+				
+          <header id="header">
+            <h1><a href="https://example.org/">Machine Learning Business Processes</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+                  <a href="#menu" class="menuToggle" aria-label='Menu'><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+				              
+				              <li><a href="/">Home</a></li>
+				              
+				              <li><a href="/blog/">Posts</a></li>
+				              
+				              <li><a href="/cases/">Case Studies</a></li>
+				              
+				              <li><a href="/news/">News</a></li>
+				              
+				              <li><a href="/about/">About</a></li>
+				              
+				              <li><a href="/contact/">Contact</a></li>
+				              
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-        <div class="ml:auto">
-            
-            
-            
-        </div>
-    </div>
-</nav>
-<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
-        <div class="max-w:700 w:full box:content-box">
-<article class="box:border-box pt:32">
-    <header class="mb:32">
-        <div class="font:40 font:extrabold">MLOps debugging: an example</div>
-        <div class="mt:16 f:fade-60">
-            <time>Nov 17, 2023</time>
-            </div>
-    </header><div class="
-    _:where(a):hover{text-decoration-color:fade}
-    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
-    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
-    _:where(code){font:90%;_v:middle}
-    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
-    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
-    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
-    _:where(h1){font:40;_font:extrabold}
-    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
-    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
-    _:where(h2){mb:1em;_font:32}
-    _:where(h3){font:24}
-    _:where(h4){font:20}
-    _:where(h5){font:16}
-    _:where(h6){font:14}
-    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
-    _:where(li){pl:.375em}
-    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
-    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
-    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
-    >:first-child{mt:0!}
-    _:where(pre){p:20;_r:8;_overflow:auto}
-    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
-    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
-    _:where(table){width:full;_border-spacing:0}
-    _:where(td){v:baseline}
-    _:where(td,th):first-child{pl:0}
-    _:where(td,th):last-child{pr:0}
-    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
-    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
-    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
-    _:where(ul){list-style-type:disc}
-    _:where(ul,ol,blockquote){pl:1.5em}
-    _:where(video,img){max-width:full}
-    _:where(a,mark){text-underline-offset:3}
-    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><p>In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.</p>
+<article id="main">
+  <header >
+    <h2>MLOps debugging: an example</h2>
+    
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+      <p>In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.</p>
 <p>So, having trained the GLMs, we fit the same data and calculate the average probabilities for each cohort. We then bastardise the data to create the counterfactuals For example, socioeconomic status is of interest so let&rsquo;s make everybody the same level (counterfactual) then make our predictions again and compare with the factual results.</p>
 <p>Now, one would imagine that if the corresponding GLM coefficient were positive, then the average probability from the counterfactuals would be less than that of the factual data. This is simple maths, right? You dot product your feature vector with the coefficients and plug it into the sigmoid function. A positive coefficient would lead to a bigger product and so a smaller denominator.</p>
 <p>We were mostly seeing this but about 10% of our predicitions violated this rule.</p>
@@ -159,12 +144,44 @@ p-value        difference     % difference   std error
 </code></pre><p>We need run it only a dozen or so times to see that the coefficients with the largest p-value tend to have the largest percentage discrepancies between the two fits and that the sign can change.</p>
 <h3 id="the-culprit">The Culprit</h3>
 <p>These CLI antics lead me to question the &ldquo;given the same data&rdquo; assumption. A closer look at the timestamps of the input data sets revealed they were built a week apart (Palantir&rsquo;s Foundry will by default silently fall back to data sets on a different branch if they have not been built on the current branch. This data may be stale). Well, our data slowly grows over time. So, could these small differences be responsible for big swings in the GLM coefficients? I created in the pipeline a single snapshot of the data from which both the risk and odds values derived and there were zero discrepancies. Sweet.</p>
-</div></article>
-<footer class="py:24">
-    <div class="f:fade-30 f:14 mb:8"></div>
-</footer>
-</div>
-    </div>
-</body>
 
+		</div>
+	</section>
+</article>
+				
+					<footer id="footer">
+						<ul class="icons">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+						</ul>
+						<ul class="copyright">
+              <li>&copy; 2023 </li><li>AI Alliance</li>
+						</ul>
+					</footer>
+
+			</div>
+
+      
+
+
+
+
+
+
+
+
+
+<script src="/js/bundle.min.faa671bc73167e3525fa420ce44546961a3c777b699ec8b967f9853c1f3aea6d2db0108e19b96b750b9ddb4f1d71229f5e8df71566afdaf01f3b429fd87476b8.js" integrity="sha512-&#43;qZxvHMWfjUl&#43;kIM5EVGlho8d3tpnsi5Z/mFPB866m0tsBCOGblrdQud208dcSKfXo33FWav2vAfO0Kf2HR2uA=="></script>
+
+
+	</body>
 </html>
+
