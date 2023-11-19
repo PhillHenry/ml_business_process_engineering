@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Machine Learning Business Processes</title>
+    <link>./tags/index/</link>
+    <description>Recent content in index on Machine Learning Business Processes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Nov 2023 10:46:24 +0000</lastBuildDate>
+    <atom:link href="./tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News</title>
+      <link>./news/</link>
+      <pubDate>Sun, 19 Nov 2023 10:46:24 +0000</pubDate>
+      <guid>./news/</guid>
+      <description>News </description>
+    </item>
+  </channel>
+</rss>
