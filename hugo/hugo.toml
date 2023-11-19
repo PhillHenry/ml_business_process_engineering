@@ -46,7 +46,7 @@ enable = true
 
 [[params.two.section]]
 img = "img/clockwork.jpg"
-img_alt = "blurry background: white/grey"
+img_alt = "runs like clockwork"
 title = ''
 body = '''
 Most ML practitioners are fresh from University.
