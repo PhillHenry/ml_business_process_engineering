@@ -1,4 +1,90 @@
-baseURL = 'https://example.org/'
+baseURL = "."
 languageCode = 'en-us'
 title = 'Machine Learning Business Processes'
-theme        = "holy"
+theme = "spectral"
+
+
+[[params.menu.main]]
+url = '/'
+title = "Home"
+
+[[params.menu.main]]
+url = '/blog/'
+title = "Posts"
+
+[[params.menu.main]]
+url = '/cases/'
+title = "Case Studies"
+
+[[params.menu.main]]
+url = '/news/'
+title = "News"
+
+[[params.menu.main]]
+url = '/about/'
+title = "About"
+
+[[params.menu.main]]
+url = '/contact/'
+title = "Contact"
+
+
+[params]
+fancyTitle = "AI Alliance" # title for frontpage, may include image
+description = 'Success in Machine Learning'
+body_is_markdown = true
+
+[params.one]
+enable = true
+title = '"About 87% of ML models never make it to production."'
+body = '[Accenture](https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/accenture-ai-scaling-ml-and-deep-learning-models.html)'
+body_is_markdown = true
+
+
+[params.two]
+enable = true
+
+[[params.two.section]]
+img = "img/pic01.jpg"
+img_alt = "blurry background: white/grey"
+title = ''
+body = '''
+Most ML practitioners are fresh from University.
+Wouldn't you prefer professionals who have decades of experience?
+
+We are a collective of experts each having spent 30 years in industry.
+
+We offer consulting services and corporate training. We install processes that reduce time to market and cut maintenance costs.
+
+With our help, your ML project won&rsquo;t be one of the failing 87%.
+
+Instead, you&rsquo;ll have a project that delivers on time and on budget.
+'''
+body_is_markdown = true
+
+[params.three]
+enable = true
+title = 'Experience Counts'
+body = '''
+The recipe is simple:  we take industry best practices and apply them to ML projects.
+'''
+
+[[params.three.feature]]
+icon = "solid fa-code"
+title = "Reduce costs"
+body = "With a CI/CD pipeline, you'll be delivering value every day, all day."
+
+[[params.three.feature]]
+icon = "solid fa-laptop"
+title = "Deliver Faster"
+body = "Automated tests will mean your team moves faster without breaking things."
+
+[[params.three.feature]]
+icon = "fa-flag"
+title = "Deliver Quality"
+body = "Adopting robust processes means problems are spotted sooner and fixes are cheaper."
+
+[[params.three.feature]]
+icon = "fa-heart"
+title = "Deliver Value"
+body = "Employing Agile techniques means we build exactly what the customer wants."
