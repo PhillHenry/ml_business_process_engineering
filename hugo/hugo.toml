@@ -47,7 +47,6 @@ enable = true
 [[params.two.section]]
 img = "img/clockwork.jpg"
 img_alt = "runs like clockwork"
-title = ''
 body = '''
 Most ML practitioners are fresh from University.
 Wouldn't you prefer professionals who have decades of experience?
