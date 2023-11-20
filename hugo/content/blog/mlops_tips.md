@@ -1,6 +1,6 @@
 +++
 title = 'Tips for effective MLOps'
-date = 2022-04-19T11:48:56Z
+date = 2023-04-19T11:48:56Z
 draft = true
 +++
 
