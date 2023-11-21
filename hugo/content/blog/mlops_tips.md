@@ -16,7 +16,7 @@ Keep everything as deterministic as you can. Using commands like SQL's `first` m
 
 Prefer to write intermediate data sets to persistent storage and load them again in the next stage over processing everything in memory with a single output. It might make the pipeline take longer to run but it gives you something like an "audit log" of the steps in your model. This is very useful when you are debugging.
 
-Have diagnositic transforms in your pipeline. Typically, they make assertions to ensure self-consistency (eg, all patients' hospital length-of-stay must be non-negative; the aggregated total of overnight patients cannot exceed the total number of beds etc). These transforms output any violations into data sets that will never be seen by the end user, just the MLOps team. Diagnostic transforms have the advantage over the local test in that they can use real data as they are embedded in the production pipeline.
+Have diagnostic transforms in your pipeline. Typically, they make assertions to ensure self-consistency (eg, all patients' hospital length-of-stay must be non-negative; the aggregated total of overnight patients cannot exceed the total number of beds etc). These transforms output any violations into data sets that will never be seen by the end user, just the MLOps team. Diagnostic transforms have the advantage over the local test in that they can use real data as they are embedded in the production pipeline.
 
 ### Process
 

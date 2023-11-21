@@ -7,8 +7,8 @@ We are a collective that has decades of experience in delivering working softwar
 
 ### Phillip Henry
 Phillip received his BSc in physics from Imperial College and then spent the next 30 years consulting for the likes of Goldman Sachs and Vodafone.
-He spent a year as a Senior Data Scientist at Erste Bank in Vienna where he focussed on delivery.
-He specialises in Big Data technologies.
+He spent a year as a Senior Data Scientist at Erste Bank in Vienna where he focused on delivery.
+He specialises in Big Data technologies and MLOps.
 
 
 ### Mauro Talevi
