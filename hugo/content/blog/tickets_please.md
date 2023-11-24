@@ -20,7 +20,7 @@ Common to all good ticketing systems are:
 
 - **Audit logs**. You need to know who said what and when, especially six months after the product goes live and you wonder why certain decisions were made.
 
-- **Ticket numbers**. Think of this as the primary key for the work, a lingua franca that makes communicating which work we’re talking about unambiguous. Disappointingly, not all ticketing systems provide these. The popular Miro does not have this functionality at the time of writing.
+- **Ticket numbers**. Think of this as the primary key for the work, a lingua franca that makes communicating which work we’re talking about unambiguous. Disappointingly, not all ticketing systems provide these. The popular Asana does not have this functionality at the time of writing.
 
 If your ticket system has these two properties then you can get:
 
