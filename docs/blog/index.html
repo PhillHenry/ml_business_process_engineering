@@ -11,14 +11,14 @@
 
     <meta name="description" content="Success in Machine Learning">
     
-    <link rel="alternate" type="application/rss+xml" href="www.theaialliance.net/blog/index.xml" title="The AI Alliance">
+    <link rel="alternate" type="application/rss+xml" href="./blog/index.xml" title="The AI Alliance">
     <meta name="generator" content="Hugo 0.120.4">
 
     
-<link rel="stylesheet" href="/www.theaialliance.net/css/main.min.09224b467f2c555409865abcdf41f1274d28443d62fe5328ebcd73347b9dd264ae5252ade861e8ea1e4e114804b96f4720a7117f83b8e24922fd71f04afbbb08.css" integrity="sha512-CSJLRn8sVVQJhlq830HxJ00oRD1i/lMo681zNHud0mSuUlKt6GHo6h5OEUgEuW9HIKcRf4O44kki/XHwSvu7CA==">
+<link rel="stylesheet" href="/css/main.min.09224b467f2c555409865abcdf41f1274d28443d62fe5328ebcd73347b9dd264ae5252ade861e8ea1e4e114804b96f4720a7117f83b8e24922fd71f04afbbb08.css" integrity="sha512-CSJLRn8sVVQJhlq830HxJ00oRD1i/lMo681zNHud0mSuUlKt6GHo6h5OEUgEuW9HIKcRf4O44kki/XHwSvu7CA==">
 
 
-<noscript><link rel="stylesheet" href="/www.theaialliance.net/css/noscript.min.e6f1ba19697eecfddfbf83ff7181b98181998f163d7005f6ae923451556bf85bef357f43dffe1522b92c1efab7fb38441f479e39b7a03e4313a8ef12b0b01f65.css" integrity="sha512-5vG6GWl&#43;7P3fv4P/cYG5gYGZjxY9cAX2rpI0UVVr&#43;FvvNX9D3/4VIrksHvq3&#43;zhEH0eeObegPkMTqO8SsLAfZQ=="></noscript>
+<noscript><link rel="stylesheet" href="/css/noscript.min.e6f1ba19697eecfddfbf83ff7181b98181998f163d7005f6ae923451556bf85bef357f43dffe1522b92c1efab7fb38441f479e39b7a03e4313a8ef12b0b01f65.css" integrity="sha512-5vG6GWl&#43;7P3fv4P/cYG5gYGZjxY9cAX2rpI0UVVr&#43;FvvNX9D3/4VIrksHvq3&#43;zhEH0eeObegPkMTqO8SsLAfZQ=="></noscript>
 
 
 
@@ -32,7 +32,7 @@
     <meta property="og:title" content="Blogs" />
 <meta property="og:description" content="Success in Machine Learning" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="www.theaialliance.net/blog/" />
+<meta property="og:url" content="./blog/" />
 
 
     
@@ -44,7 +44,7 @@
 
 				
           <header id="header">
-            <h1><a href="www.theaialliance.net">The AI Alliance</a></h1>
+            <h1><a href=".">The AI Alliance</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -79,13 +79,13 @@
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="www.theaialliance.net/blog/mlops_tips/">Tips for effective MLOps</a></h2>
+    <h2><a href="./blog/mlops_tips/">Tips for effective MLOps</a></h2>
     <time class="icon fa-clock-o">19.04.2023 11:48</time>
     <p>Some miscellaneous tips I&rsquo;ve discovered after over a year of being hands-on with a clinical ETL pipeline.
 Technology Set up a local dev environment (Git, Pip, IDE of choice, Python environment etc). Being able to test locally cannot be more important. For instance, I&rsquo;ve been using Palantir&rsquo;s Foundry but since it&rsquo;s just a wrapper around Spark, you can have a full, locally run, test suite using PySpark.
 If you can&rsquo;t get the data on your laptop (GDPR etc), use simulated data.</p>
     
-    <a href="www.theaialliance.net/blog/mlops_tips/">Read more…</a>
+    <a href="./blog/mlops_tips/">Read more…</a>
     
 	</div>
 </section>
@@ -93,13 +93,13 @@ If you can&rsquo;t get the data on your laptop (GDPR etc), use simulated data.</
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="www.theaialliance.net/blog/debugging/">MLOps: debugging a pipeline</a></h2>
+    <h2><a href="./blog/debugging/">MLOps: debugging a pipeline</a></h2>
     <time class="icon fa-clock-o">26.11.2022 11:34</time>
     <p>Healthcare in England is broken down into about 40 regions. For each region, we want to measure the differences in clinical outcomes conditioned on the ethnic and socioeconomic categories of the patients. To do this, we feed the data for each health region into a Spark GLM (Generalized Linear Models).
 The problem Everything was fine with our pipeline for six months before it started to blow up with:
 Caused by: org.</p>
     
-    <a href="www.theaialliance.net/blog/debugging/">Read more…</a>
+    <a href="./blog/debugging/">Read more…</a>
     
 	</div>
 </section>
@@ -107,12 +107,12 @@ Caused by: org.</p>
 		
 			<section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="www.theaialliance.net/blog/debugging2/">MLOps debugging: an example</a></h2>
+    <h2><a href="./blog/debugging2/">MLOps debugging: an example</a></h2>
     <time class="icon fa-clock-o">11.04.2022 11:43</time>
     <p>In our ML pipeline, we use generalized linear models to calculate the odds of certain clinical outcomes. We showed this to the client but odds were hard for them to understand. &ldquo;Can we have probabilities instead?&rdquo; they asked.
 So, having trained the GLMs, we fit the same data and calculate the average probabilities for each cohort. We then bastardise the data to create the counterfactuals For example, socioeconomic status is of interest so let&rsquo;s make everybody the same level (counterfactual) then make our predictions again and compare with the factual results.</p>
     
-    <a href="www.theaialliance.net/blog/debugging2/">Read more…</a>
+    <a href="./blog/debugging2/">Read more…</a>
     
 	</div>
 </section>
@@ -158,7 +158,7 @@ So, having trained the GLMs, we fit the same data and calculate the average prob
 
 
 
-<script src="/www.theaialliance.net/js/bundle.min.faa671bc73167e3525fa420ce44546961a3c777b699ec8b967f9853c1f3aea6d2db0108e19b96b750b9ddb4f1d71229f5e8df71566afdaf01f3b429fd87476b8.js" integrity="sha512-&#43;qZxvHMWfjUl&#43;kIM5EVGlho8d3tpnsi5Z/mFPB866m0tsBCOGblrdQud208dcSKfXo33FWav2vAfO0Kf2HR2uA=="></script>
+<script src="/js/bundle.min.faa671bc73167e3525fa420ce44546961a3c777b699ec8b967f9853c1f3aea6d2db0108e19b96b750b9ddb4f1d71229f5e8df71566afdaf01f3b429fd87476b8.js" integrity="sha512-&#43;qZxvHMWfjUl&#43;kIM5EVGlho8d3tpnsi5Z/mFPB866m0tsBCOGblrdQud208dcSKfXo33FWav2vAfO0Kf2HR2uA=="></script>
 
 
 	</body>
