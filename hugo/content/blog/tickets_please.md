@@ -14,7 +14,7 @@ The reason for this is often the data. Few people know it intimately before work
 
 As a result, there will be a back-and-forth with the business over what is to be done, what assumptions are acceptable and what consequences there may or may not be for the final product.
 
-Developers are no strangers to this process but the problem is solved. Software engineering uses ticketing systems to manage complexity (you’d be hard pressed to find a successful open source project that doesn't). In a ticketing system, all the requirements can be documented and are generally available to any team member with a web browser. That means, the business as well as the techies have a common forum in which to horse-trade.
+Developers are no strangers to this process but they've solved the problem. Software engineering uses ticketing systems to manage complexity (you’d be hard pressed to find a successful open source project that doesn't). In a ticketing system, all the requirements can be documented and made available to any team member with a web browser. That means the business as well as the techies have a forum in which to horse-trade.
 
 Common to all good ticketing systems are:
 
@@ -22,9 +22,9 @@ Common to all good ticketing systems are:
 
 - **Ticket numbers**. Think of this as the primary key for the work, a lingua franca that makes communicating which work we’re talking about unambiguous. Disappointingly, not all ticketing systems provide these. The popular Miro does not have this functionality at the time of writing.
 
-If your ticket system has these then you can get:
+If your ticket system has these two properties then you can get:
 
-## Automatic documentation
+## Automatic documentation!
 
 There’s a nice little trick you can do to link the code to the requirements. If the data scientists have a standard naming convention for the branches on which they work, their code can automagically be linked to the requirements. Free. No extra documentation needed.
 
@@ -32,11 +32,11 @@ Let’s take an example. Here is some code that was written years ago. Note that
 
 ![Note the naming convention of the branch](/img/blog/ticket_code.png)
 
-The best thing is that you can tell your code editor to link this code with the ticket with one click. If future data scientists scratch their head over why you took certain decisions in the machine learning pipeline, they need only click that link and behold!
+The best thing is that you can tell your code editor to link this code with the ticket with just one click. If future data scientists scratch their head over why you took certain decisions in the machine learning pipeline, they need only click that link and behold!
 
 ![Click that link!](/img/blog/ticket_open.png)
 
 Up pops a browser with the requirements and all the conversations with the business discussing why certain decisions were taken.
 
-OK, you might not be that impressed today. But in a year’s time when you’re wondering why the hell we did things like that, the answer will be just a click away. And the best bit is, this is true for **every single line** of your codebase.
+OK, you might not be that impressed today. But in a year’s time when you’re wondering why the hell we did things like that, the answer will be just a hyperlink away. And the best bit is: this is true for **every single line** in your codebase!
 
