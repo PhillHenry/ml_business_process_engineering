@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'The AI Alliance'
 theme = "spectral"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true	
 
 [[params.menu.main]]
 url = '/'
