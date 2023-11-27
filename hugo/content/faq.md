@@ -10,7 +10,8 @@ faq = true
 {{% faq-answer %}}
 Although we can implement ML solutions, that's not our core activity. 
 The AI Alliance is all about putting in place the processes that ensure successful project delivery.
-This can be in the form of corporate education or more conventional consulting - that is, identifying pain points. 
+This can be in the form of corporate education or more conventional consulting: identifying pain points and proposing bespoke solutions.
+
 Teach a man to fish etc, etc.
 {{% /faq-answer %}}
 {{% /faq-question %}}
