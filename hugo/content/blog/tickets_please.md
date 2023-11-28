@@ -2,13 +2,14 @@
 title = 'Tickets, please'
 date = 2023-11-24T14:03:36Z
 draft = true
+description = "Document your Machine Learning models for free!"
 +++
 
 Change is part of life whether we like it or not.  Everybody reacts to it differently. There are some who resist it and some who embrace it. 
 
-And so it is in the world of development. Some want everything in its right place before work begins. Others accept flexibility.
+It's the same in the world of development. Some want everything in its right place before work begins. Others accept flexibility.
 
-For most machine learning projects, change comes with the territory. Often, what may appear to be a straightforward piece of work actually turns out to be quite tricksy and goal posts subtly shift during development.
+For most machine learning projects, change comes with the territory. Often, what may appear to be a straightforward piece of work actually turns out to be quite tricky and goal posts subtly shift during development.
 
 The reason for this is often the data. Few people know it intimately before work begins, at least as far as the new requirements are concerned. And ask any data scientist what s/he thinks of the quality of their data (seriously, try it!). They’ll generally tell you it sucks.
 
