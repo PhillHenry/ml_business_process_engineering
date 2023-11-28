@@ -29,6 +29,10 @@ url = '/about/'
 title = "About"
 
 [[params.menu.main]]
+url = '/faq/'
+title = "FAQ"
+
+[[params.menu.main]]
 url = '/contact/'
 title = "Contact"
 
