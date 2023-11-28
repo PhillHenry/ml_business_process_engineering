@@ -4,7 +4,7 @@ date = 2023-11-28T12:33:15Z
 draft = true
 +++
 
-I know the title is clickbait. And I know it's subject to [Betteridge's law of headlines](https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines) ("Any headline that ends in a question mark can be answered by the word 'no'."). But hear me out. Consider this quote:
+I know the title is clickbait. And I know it's subject to [Betteridge's law of headlines](https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines) ("Any headline that ends in a question mark can be answered by the word 'no'."). But hear me out and consider this quote:
 
 > Data scientists spend around 80% of their time on preparing and managing data for analysis. 
 > [(Forbes)](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/)
