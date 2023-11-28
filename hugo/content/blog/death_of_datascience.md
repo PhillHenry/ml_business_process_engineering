@@ -16,7 +16,7 @@ But for the rest of us, it's mostly pipelines all the way down.
 Now, this is not necessarily a bad thing. Building pipelines is interesting stuff. But the industry needs to recognise that it's mostly doing software engineering not sexy science.
 
 I was talking to a systems architect who bemoaned the fact that his data scientists engage with neither the engineers nor the business stakeholders. 
-They wanted to build LLMs. Why did they want to build LLMs? "Well, haven't you read the news recently? They're everywhere!"
+They wanted to build LLMs. Why? "Well, haven't you read the news recently? They're everywhere!"
 The fact that LLMs are a generative model and there was no business value in generating text here meant nothing to them.
 Just get the data engineers to deploy it and damn the torpedos.
 
@@ -29,7 +29,7 @@ This is where data science is today in most large companies. Data scientists are
 And just as the software industry collapsed in 2001 so will the data science industry if things continue this way.
 
 
-How does the industry avoid this?
+How do we avoid this?
 Well, one way is to have data scientists engage more with the rest of the team - the data engineers, the business representatives, the testers, etc.
 The Agile movement in the software industry showed how developers could be more professional. 
 They were no longer to sit in their basements, hidden away from the business. 
