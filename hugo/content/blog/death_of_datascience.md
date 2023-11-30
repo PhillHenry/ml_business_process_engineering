@@ -11,10 +11,10 @@ I know the title is clickbait. And I know it's subject to [Betteridge's law of h
  
 The dirty truth of data science is that most of the work is not actually data _science_ at all but data _engineering_.
 Sure, there are some very clever people at Google etc who do true data science all day, every day. 
-But for the rest of us, it's mostly pipelines all the way down.
+But for the rest of us, it's data pipelines all the way down.
 
 Now, this is not necessarily a bad thing. Building pipelines is interesting stuff. 
-But the industry needs to recognise that it's mostly doing boring old software engineering not sexy science.
+But the industry needs to recognise that it's doing boring old software engineering not sexy science.
 
 Data scientists really must appreciate the full software development life cycle.
 I was talking to a systems architect who bemoaned the fact that his data scientists engage with neither the engineers nor the business stakeholders. 
@@ -35,6 +35,6 @@ How do we avoid this?
 Well, one way is to have data scientists engage more with the rest of the team - the data engineers, the business representatives, the testers, etc.
 The Agile movement in the software industry showed how developers could be more professional. 
 They were no longer to sit in their basements, hidden away from the business. 
-Instead, they were to have **daily standups with all stakeholders**. And every iteration (about every fortnight) they were to have **planning sessions** where suits and techies sat down and discussed what work was to be done in the next two weeks or so.
+Instead, they were to have **daily standups with all stakeholders**. And before every iteration (about every fortnight) they were to have **planning sessions** where suits and techies sat down and discussed what work was to be done next.
 
 It's interesting that the Agile movement really gained traction shortly after with the dotcom bomb. Let's hope the data science industry learns from this and avoids a bust.
