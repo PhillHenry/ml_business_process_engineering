@@ -6,9 +6,9 @@ date = 2023-11-15T13:33:40Z
 We are a collective that has decades of hands-on experience in delivering working projects.
 
 ### Ronan Dowling
-Ronan received his PhD in Electrical Engineering from Imperial College in 2001. 
-He has spent most of his time since then working as the head of Quant Research for Lehman Brothers and as an MD for Nomura.
-In these roles, he has built and deployed to production many models that typically handle hundreds of millions of dollars.
+Ronan received his PhD in Electrical Engineering from Imperial College in 2004. 
+He worked for many years in Quant Research at Lehman Brothers where he built models for pricing and risk management of complex derivatives. 
+Subsequently he moved to managing this business as head of exotics options trading. In 2009, he moved to Nomura where he was MD in charge of all FX trading in London.
 
 ### Phillip Henry
 Phillip received his BSc in physics from Imperial College and then spent the next 30 years consulting for the likes of Goldman Sachs and Vodafone.

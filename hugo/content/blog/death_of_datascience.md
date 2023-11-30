@@ -6,15 +6,17 @@ draft = true
 
 I know the title is clickbait. And I know it's subject to [Betteridge's law of headlines](https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines) ("Any headline that ends in a question mark can be answered by the word 'no'."). But hear me out and consider this quote:
 
-> Data scientists spend around 80% of their time on preparing and managing data for analysis. 
+> "Data scientists spend around 80% of their time on preparing and managing data for analysis."
 > [(Forbes)](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/)
  
 The dirty truth of data science is that most of the work is not actually data _science_ at all but data _engineering_.
 Sure, there are some very clever people at Google etc who do true data science all day, every day. 
 But for the rest of us, it's mostly pipelines all the way down.
 
-Now, this is not necessarily a bad thing. Building pipelines is interesting stuff. But the industry needs to recognise that it's mostly doing software engineering not sexy science.
+Now, this is not necessarily a bad thing. Building pipelines is interesting stuff. 
+But the industry needs to recognise that it's mostly doing boring old software engineering not sexy science.
 
+Data scientists really must appreciate the full software development life cycle.
 I was talking to a systems architect who bemoaned the fact that his data scientists engage with neither the engineers nor the business stakeholders. 
 They wanted to build LLMs. Why? "Well, haven't you read the news recently? They're everywhere!"
 The fact that LLMs are a generative model and there was no business value in generating text here meant nothing to them.
