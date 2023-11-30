@@ -20,7 +20,7 @@ Data scientists really must appreciate the full software development life cycle.
 I was talking to a systems architect who bemoaned the fact that his data scientists engage with neither the engineers nor the business stakeholders. 
 They wanted to build LLMs. Why? "Well, haven't you read the news recently? They're everywhere!"
 The fact that LLMs are a generative model and there was no business value in generating text here meant nothing to them.
-Just get the data engineers to deploy it and damn the torpedos.
+Just get the data engineers to deploy it and damn the torpedoes.
 
 <img style="float: right;" src="/img/blog/nuclear_explosion.jpg"  width="300" title="Look what will happen to data science if it doesn't behave" alt="A fireball" >
 
@@ -35,6 +35,6 @@ How do we avoid this?
 Well, one way is to have data scientists engage more with the rest of the team - the data engineers, the business representatives, the testers, etc.
 The Agile movement in the software industry showed how developers could be more professional. 
 They were no longer to sit in their basements, hidden away from the business. 
-Instead, they were to have **daily standups with all stakeholders**. And before every iteration (about every fortnight) they were to have **planning sessions** where suits and techies sat down and discussed what work was to be done next.
+Instead, they were to have **daily stand-ups with all stakeholders**. And before every iteration (about every fortnight) they were to have **planning sessions** where suits and techies sat down and discussed what work was to be done next.
 
 It's interesting that the Agile movement really gained traction shortly after with the dotcom bomb. Let's hope the data science industry learns from this and avoids a bust.
