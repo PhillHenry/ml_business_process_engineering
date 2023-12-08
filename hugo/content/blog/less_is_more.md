@@ -32,13 +32,18 @@ I experienced a similar success story in data science when we had adopted Highsm
 
 # Workshops are for Victorians
 
-Highsmith also touches on another aspect of Agile methodologies: short iterations. In the world of data science, it’s common to see workshops organised at the beginning of a project and then the team told to go off and build what was discussed with no further input. Alas, it’s not long before they hit a roadblock and they need guidance from subject matter experts. But without the cadence of regular meetings with the customer, timelines soon start to slip.
+Highsmith also touches on another aspect of Agile methodologies: short iterations. In the world of data science, it’s common to see a workshop organised at the beginning of a project and then the team told to go off and build what was discussed with no further input. Alas, it’s not long before they hit a roadblock and they need guidance from subject matter experts. But without the cadence of regular meetings with the customer, timelines soon start to slip.
 
 In an attempt to compensate for this oversight, more bodies are often thrown at the problem. This inevitably causes communication problems. In software cicles, this is know an Brook’s Law and is stated as:
 
 > “When a task cannot be partitioned because of sequential constraints, the application of more effort has no effect on the schedule. The bearing of a child takes nine months, no matter how many women are assigned.”
 
-Professor Fred Brooks was the project manager of a large IBM system back in the 1960s and 70s but this doesn’t make his advice any less salient. His seminal book<sup>[2]</sup> that contains the brutal lessons he learned has been in print ever since it was first published in 1975. Most computer programmers know of Brooke’s Law even if those managing them perhaps do not. It’s a universal principle that applies equally to data science. 
+Professor Fred Brooks was the project manager of a large IBM system back in the 1960s and 70s but this doesn’t make his advice any less salient. His seminal book<sup>[2]</sup> that contains the brutal lessons he learned has been in print ever since it was first published in 1975. 
+
+Most computer programmers know of Brooke’s Law even if those managing them perhaps do not. It’s a universal principle that applies equally to data science. 
+
+To summarize: a team should be as small as possible but no smaller. 
+
 
 [1] “Agile Software Development Ecosystems” - Jim Highsmith 
 
