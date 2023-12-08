@@ -22,7 +22,7 @@ Van Riper’s methodology might have been radical in the military world, but it�
 
 # Less is more
 
-The Agile movement recognised this decades ago. One of the Agile movement's founders, Jim Highsmith, described in 1994 how he “put a **small** team together in a room; had short, iterative development; and used end-of-iteration customer focus group reviews. It was wildly successful”<sup>[1]</sup>. If you talk to anybody who has been around the Agile world for a while, you’ll hear similar stories.
+One of the Agile movement's founders, Jim Highsmith, described in 1994 how he “put a **small** team together in a room; had short, iterative development; and used end-of-iteration customer focus group reviews. It was wildly successful”<sup>[1]</sup>. If you talk to anybody who has been around the Agile world for a while, you’ll hear similar stories.
 
 I experienced a similar success story in data science when we had adopted Highsmith's principles (the only tenet we did not adopt was having a **collocated** team as this was during Covid). We were a small team of three data science developers plus a truly excellent analyst who was our proxy to the business. With such a small, self-organising collective, we all knew what the other was working on so there was no duplication of work and almost no misunderstanding. We delivered on time and on budget and later heard that our competitor was still putting together their pitch by the time we had finished - a pitch that proposed a head count of more than a dozen.
 
