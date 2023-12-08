@@ -22,10 +22,6 @@ Van Riper’s methodology might have been radical in the military world, but it�
 
 # Less is more
 
-In Victorian times, the productivity of a factory was related to how many workers it had. Well into the 20th Century, the number of hands on an assembly line would dictate, say, how many cars were built. Things started to change in the 1980s with Japanese production techniques and automation. But it wasn’t until the internet boom of the late 90s when the word “knowledge worker” entered common usage and the idea of command-and-control production became outdated.
-
-Perhaps MBA programmes have not yet caught up as surprisingly few management consultants seem to be aware that “less is more” when it comes to software. Our Victorian forebears would be shocked but in the knowledge economy, _fewer_ workers are needed for a tech project to succeed not more.
-
 The Agile movement recognised this decades ago. One of the Agile movement's founders, Jim Highsmith, described in 1994 how he “put a **small** team together in a room; had short, iterative development; and used end-of-iteration customer focus group reviews. It was wildly successful”<sup>[1]</sup>. If you talk to anybody who has been around the Agile world for a while, you’ll hear similar stories.
 
 I experienced a similar success story in data science when we had adopted Highsmith's principles (the only tenet we did not adopt was having a **collocated** team as this was during Covid). We were a small team of three data science developers plus a truly excellent analyst who was our proxy to the business. With such a small, self-organising collective, we all knew what the other was working on so there was no duplication of work and almost no misunderstanding. We delivered on time and on budget and later heard that our competitor was still putting together their pitch by the time we had finished - a pitch that proposed a head count of more than a dozen.
