@@ -26,4 +26,10 @@ And this is just as true for data science which is underpinned by data engineeri
 <blockquote>
 "I highly recommend getting a 'hello world' type project working with continuous deployment ... before you proceed directly into a complex ML project when you are learning new technology." - Practical  MLOps, O'Reilly
 </blockquote>
-Continuous deployment can also identify hard-to-catch bugs in an ML model. Example: we were continuously deploying to a test environment when we noticed our model's <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve">area under the curve</a> drop a few percentage points. It wasn't much but enough to make us roll back to a previous Git commit and examine what had changed. It was a subtle bug that our otherwise robust suite of unit tests did not catch. Without this continuous release process, we'd probably never have found this bug as it degraded performance but not by enough to make us launch a full-scale investigation. As with a lot of ML projects, we didn't know <i>a priori</i> what the answer was going to be.
+Continuous deployment can also identify hard-to-catch bugs in an ML model. Example: we were continuously deploying to a test environment when we noticed our model's <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve">area under the curve</a> drop a few percentage points. It wasn't much but enough to make us roll back to a previous Git commit and examine what had changed. It was a subtle bug that our otherwise robust suite of unit tests did not catch. Without this continuous release process, we'd probably never have found this bug as it degraded performance but not by enough to make us launch a full-scale investigation. As with most ML projects, we didn't know <i>a priori</i> what the answer was going to be.
+<br/>
+<br/>
+The practice of continuous deployment has been around in the software development community for about a couple of decades. 
+We're always keen to point out to Machine Learning practitioners the benefits of borrowing best practices from an adjacent discipline. 
+But it appears that it's only the most mature teams today that have a continuous deployment pipeline. 
+As data science progresses, hopefully this will change.
