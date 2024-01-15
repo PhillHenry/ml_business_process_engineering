@@ -32,4 +32,4 @@ Continuous deployment can also identify hard-to-catch bugs in an ML model. Examp
 The practice of continuous deployment has been around in the software development community for about a couple of decades. 
 We're always keen to point out to Machine Learning practitioners the benefits of borrowing best practices from an adjacent discipline. 
 But it appears that it's only the most mature teams today that have a continuous deployment pipeline. 
-As data science progresses, hopefully this will change.
+As data science progresses, hopefully this will change as everybody embraces automated pipelines.
