@@ -31,5 +31,5 @@ Continuous deployment can also identify hard-to-catch bugs in an ML model. Examp
 <br/>
 The continuous improvement process in aeronautical engineering that lead to the Spitfire has been around for almost a century.
 The software development community has employed continuous deployment for decades. 
-But only the most mature data science teams today that have a continuous pipeline. 
+But only the most mature data science teams today that have an automated pipeline. 
 As data science progresses, hopefully this will improve.
