@@ -6,11 +6,11 @@ draft = true
 
 ## “Keep it Simple, Stupid!”
 
-![Paul Jespers' photo of a Spitfire"](/img/blog/KISS.jpg)
+!["Elimende Inagella's photo of a school sheep"](/img/blog/KISS.jpg)
 
 The KISS principle is another delightful insight from the US military. The idea is that systems work best when they are simple. The [Agile Manifesto](https://agilemanifesto.org/) phrases it in a slightly more neutral tone:
 
-> “Simplicity – the art of maximizing the amount of work not done – is essential.”
+> “Simplicity – the art of maximising the amount of work not done – is essential.”
 
 but the message is the same. 
 
@@ -26,7 +26,7 @@ A project tried to predict the number of patients in a hospital as well as the f
 It used an open source, Data Science tool from Facebook to do this.
 Given a time series of attendance date, it could then predict the number of patients for the next few days. 
 
-The problems faced included:
+The problems encountered included:
 
 - The tool kept blowing up with `out of memory` errors when presented with real data and integrated with the real infrastructure.
 
