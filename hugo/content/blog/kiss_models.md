@@ -32,7 +32,7 @@ The problems encountered included:
 
 - The flows *between* hospital units did not add up to the total numbers *at* the hospital. (When you think about it, this is not too surprising since the model for flows was independent of the model for attendances and there was no constraint imposed by one on the other).
 
-- The Facebook tool had no semantic knowledge, it just saw a series of numbers. So, for hospitals that had near zero new patients, it might sometimes dip into negative numbers. Clearly, negative 3 patients make no sense.
+- The Facebook tool had no semantic knowledge, it just saw a series of numbers. So, for hospitals that had near zero new patients, it might sometimes dip into negative territory. Clearly, negative 3 patients make no sense.
 
 ## An alternative
 
