@@ -97,7 +97,7 @@ You may be aware that there are a lot of overly complicated systems out there." 
 <p>You may be aware that there are a lot of overly complicated systems out there. There’s even a joke that data scientist tell each other:</p>
 <p>Q. How many models does a data scientist build to solve a problem?</p>
 <p>A. Two: a complicated deep learning model for their resume and a simple model for the client.</p>
-<h1 id="example">Example</h1>
+<h2 id="example">Example</h2>
 <p>A project tried to predict the number of patients in a hospital as well as the flows between hospital units.
 It used an open source, Data Science tool from Facebook to do this.
 Given a time series of attendance date, it could then predict the number of patients for the next few days.</p>
@@ -113,11 +113,11 @@ Given a time series of attendance date, it could then predict the number of pati
 <p>The Facebook tool had no semantic knowledge, it just saw a series of numbers. So, for hospitals that had near zero new patients, it might sometimes dip into negative numbers. Clearly, negative 3 patients make no sense.</p>
 </li>
 </ul>
-<h1 id="an-alternative">An alternative</h1>
+<h2 id="an-alternative">An alternative</h2>
 <p>The simplest solution given some 10 years of data was to take an average of the attendance figures for each day, for each month, for each hospital.
 This is something any Big Data framework could easily do and can be implemented pretty easily.
 What&rsquo;s more, this model gave reasonable (if not stellar) results.</p>
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 <p>Start with the simplest model you can. It&rsquo;s generally easier to implement, cognitively less demanding and chances are that it will give reasonable results anyway. If the results are not good enough, only then investigate more exotic models.</p>
 
 		</div>
