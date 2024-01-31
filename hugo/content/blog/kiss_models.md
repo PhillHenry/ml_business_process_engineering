@@ -38,7 +38,7 @@ The problems encountered included:
 
 The simplest solution given some 10 years of data was to take an average of the attendance figures for each day, for each month, for each hospital. 
 This is something any Big Data framework could easily do and can be implemented pretty easily.
-What's more, this model gave reasonable (if not stellar) results.
+What's more, this model gave modest (if not stellar) results.
 
 ## Conclusion
 
