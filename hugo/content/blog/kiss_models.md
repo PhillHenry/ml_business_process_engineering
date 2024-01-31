@@ -22,7 +22,7 @@ A. Two: a complicated deep learning model for their resume and a simple model fo
 
 ## Example
 
-A project tried to predict the number of patients in a hospital as well as the flows between hospital units.
+A project tried to predict the number of patients in a hospital and the flows between hospital units.
 It used an open source, Data Science tool from Facebook to do this.
 Given a time series of attendance date, it could then predict the number of patients for the next few days. 
 
