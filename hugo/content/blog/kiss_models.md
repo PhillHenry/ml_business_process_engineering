@@ -20,7 +20,7 @@ Q. How many models does a data scientist build to solve a problem?
 
 A. Two: a complicated deep learning model for their resume and a simple model for the client.
 
-# Example
+## Example
 
 A project tried to predict the number of patients in a hospital as well as the flows between hospital units.
 It used an open source, Data Science tool from Facebook to do this.
@@ -34,12 +34,12 @@ The problems faced included:
 
 - The Facebook tool had no semantic knowledge, it just saw a series of numbers. So, for hospitals that had near zero new patients, it might sometimes dip into negative numbers. Clearly, negative 3 patients make no sense.
 
-# An alternative
+## An alternative
 
 The simplest solution given some 10 years of data was to take an average of the attendance figures for each day, for each month, for each hospital. 
 This is something any Big Data framework could easily do and can be implemented pretty easily.
 What's more, this model gave reasonable (if not stellar) results.
 
-# Conclusion
+## Conclusion
 
 Start with the simplest model you can. It's generally easier to implement, cognitively less demanding and chances are that it will give reasonable results anyway. If the results are not good enough, only then investigate more exotic models.
