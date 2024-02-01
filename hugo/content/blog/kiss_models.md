@@ -8,7 +8,7 @@ draft = true
 
 !["Elimende Inagella's photo of a school sheep"](/img/blog/KISS.jpg)
 
-The KISS principle is another delightful insight from the US military. The idea is that systems work best when they are simple. The [Agile Manifesto](https://agilemanifesto.org/) phrases it in a slightly more neutral tone:
+The KISS principle is another delightful insight from the US military. It means systems work best when they are simple. The [Agile Manifesto](https://agilemanifesto.org/) phrases it in a slightly more neutral tone:
 
 > “Simplicity – the art of maximising the amount of work not done – is essential.”
 
