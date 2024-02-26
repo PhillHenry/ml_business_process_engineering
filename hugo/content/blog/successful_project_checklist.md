@@ -4,6 +4,12 @@ date = 2024-02-07T15:39:51Z
 draft = true
 +++
 
+Requirements
+Automated tests
+Expectations
+CICD
+
+
 ### You can ignore these but you face a world of pain if you do
 
 * **Understand the requirements.** 
@@ -18,6 +24,11 @@ You should be able to answer two questions before work begins: *is this feasible
 Some time spent in exploratory data analysis (EDA) is never misspent.
 Data quality is often poor and needs reviewing.
 Remember that the best machine learning models in the world will disappoint if the data is dirty.
+
+* **Code repos.** 
+
+Incredibly, I know of large organisations where the machine learning code lives on the laptops of data scientists.
+They do not use code repositories and as a result, the code is not version controlled nor available for review.
 
 * **Continuous integration.** 
 
