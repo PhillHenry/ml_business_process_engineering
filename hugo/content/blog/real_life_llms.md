@@ -43,7 +43,7 @@ OK, let's just delete references to `SET_RecordIds_1020` and move on.
 
 ![Carry on again](/img/blog/carry_on_3.png)
 
-Now this is downright annoying. It says `Replace 'some_table' with the actual source table`. Huh? It's telling me to fill in its blanks!
+The next issue is downright annoying. It says `Replace 'some_table' with the actual source table`. Huh? It's telling me to fill in its blanks!
 
 ![Do my work for me](/img/blog/replace_table.png)
 
