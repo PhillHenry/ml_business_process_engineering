@@ -8,7 +8,7 @@ It's been a year since ChatGPT was released to universal acclaim. Now things are
 
 We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. **This is a real life problem**. We wonder if ChatGPT can save us tediously converting it by hand.
 
-# A large file
+## A large file
 
 ![Upload the SQL](/img/blog/rows_upload.png)
 
@@ -53,6 +53,6 @@ Instead, I need to decipher about 200 lines of code it's written and try to make
 And I'm not filled with trust that it can see this task to the bitter end.
 At this point, I think I'm better off doing it by hand.
 
-# Conclusion
+## Conclusion
 
 ChatGPT is great for simple snippets - a better [StackOverflow](https://stackoverflow.com/), perhaps. But is it going to revolutionise computer coding any time soon? Well, colour me disappointed.
