@@ -51,7 +51,7 @@ I've given it all the information it needs. Why can't it finish the job?
 
 Instead, I need to decipher about 200 lines of code it's written and try to make it work since we're nowhere near finished. 
 And I'm not filled with confidence that it can see this task to the bitter end.
-At this point, I think I'm better off doing the work myself.
+At this point, I think I'm better off doing the whole thing myself.
 
 ## Conclusion
 
