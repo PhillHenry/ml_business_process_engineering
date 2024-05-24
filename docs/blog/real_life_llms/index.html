@@ -26,14 +26,12 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Real Life AI"/>
-<meta name="twitter:description" content="It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.
-We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. This is a real life problem. We wonder if ChatGPT can save us tediously converting it by hand.
-A large file ChatGPT starts by giving a nice summary of what the SQL does."/>
+<meta name="twitter:description" content="The hype cycle Innovation Trigger It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.
+This is a real life problem. We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. We wonder if ChatGPT can save us tediously converting it by hand."/>
 
     <meta property="og:title" content="Real Life AI" />
-<meta property="og:description" content="It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.
-We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. This is a real life problem. We wonder if ChatGPT can save us tediously converting it by hand.
-A large file ChatGPT starts by giving a nice summary of what the SQL does." />
+<meta property="og:description" content="The hype cycle Innovation Trigger It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.
+This is a real life problem. We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. We wonder if ChatGPT can save us tediously converting it by hand." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/real_life_llms/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-05-23T20:06:34+01:00" />
@@ -85,15 +83,20 @@ A large file ChatGPT starts by giving a nice summary of what the SQL does." />
 	</header>
 	<section class="wrapper style5"  id="content">
 		<div class="inner">
-      <p>It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.</p>
-<p>We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. <strong>This is a real life problem</strong>. We wonder if ChatGPT can save us tediously converting it by hand.</p>
-<h2 id="a-large-file">A large file</h2>
+      <h2 id="the-hype-cycle">The hype cycle</h2>
+<h3 id="innovation-trigger">Innovation Trigger</h3>
+<p>It&rsquo;s been a year since ChatGPT was released to universal acclaim. Now things are calming down, let&rsquo;s strip away the hype and see if it can actually do something useful other than code snippets.</p>
+<p><strong>This is a real life problem</strong>.
+We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect.
+We wonder if ChatGPT can save us tediously converting it by hand.</p>
+<h3 id="peak-of-inflated-expectations">Peak of Inflated Expectations</h3>
 <p><img src="/img/blog/rows_upload.png" alt="Upload the SQL"></p>
 <p>ChatGPT starts by giving a nice summary of what the SQL does. It then converts the first 50 lines or so. These are correct but do not present much of a challenge. Still, so far so good.</p>
 <p><img src="/img/blog/carry_on.png" alt="Carry on"></p>
-<p>Now it gets to its first real problem. SQL Server and Spark have the parameters of the <code>DATEDIFF</code> keyword in the opposite order to each other. Does ChatGPT know this?</p>
+<p>Now it gets to its first real challenge. SQL Server and Spark have the parameters of the <code>DATEDIFF</code> keyword in the opposite order to each other. Does ChatGPT know this?</p>
 <p><img src="/img/blog/datediff.png" alt="Datediff"></p>
 <p>Bravo! It reverses the arguments correctly.</p>
+<h3 id="trough-of-disillusionment">Trough of Disillusionment</h3>
 <p><img src="/img/blog/carry_on_2.png" alt="Carry on again"></p>
 <p>Now we encounter the first oddity. ChatGPT hallucinates a table that doesn&rsquo;t exist.</p>
 <p><img src="/img/blog/hallucination.png" alt="Hallucination"></p>
@@ -112,10 +115,11 @@ A large file ChatGPT starts by giving a nice summary of what the SQL does." />
 <p>The next issue is downright annoying. It says <code>Replace 'some_table' with the actual source table</code>. Huh? It&rsquo;s telling me to fill in its blanks!</p>
 <p><img src="/img/blog/replace_table.png" alt="Do my work for me"></p>
 <p>I&rsquo;ve given it all the information it needs. Why can&rsquo;t it finish the job?</p>
+<h3 id="slope-of-enlightenment">Slope of Enlightenment</h3>
 <p>Instead, I need to decipher about 200 lines of code it&rsquo;s written and try to make it work since we&rsquo;re nowhere near finished.
 And I&rsquo;m not filled with confidence that it can see this task to the bitter end.
 At this point, I think I&rsquo;m better off doing the whole thing myself.</p>
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="plateau-of-productivity">Plateau of Productivity</h3>
 <p>ChatGPT is great for simple snippets - a better <a href="https://stackoverflow.com/">StackOverflow</a>, perhaps. But is it going to revolutionise computer coding any time soon? Well, colour me disappointed.</p>
 
 		</div>
