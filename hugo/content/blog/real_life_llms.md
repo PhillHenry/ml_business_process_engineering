@@ -4,11 +4,17 @@ date = 2024-05-23T20:06:34+01:00
 draft = false
 +++
 
+## The hype cycle
+
+### Innovation Trigger
+
 It's been a year since ChatGPT was released to universal acclaim. Now things are calming down, let's strip away the hype and see if it can actually do something useful other than code snippets.
 
-We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. **This is a real life problem**. We wonder if ChatGPT can save us tediously converting it by hand.
+**This is a real life problem**. 
+We have 650 lines of SQL Server code that we want converted to the Spark SQL dialect. 
+We wonder if ChatGPT can save us tediously converting it by hand.
 
-## A large file
+### Peak of Inflated Expectations
 
 ![Upload the SQL](/img/blog/rows_upload.png)
 
@@ -16,11 +22,13 @@ ChatGPT starts by giving a nice summary of what the SQL does. It then converts t
 
 ![Carry on](/img/blog/carry_on.png)
 
-Now it gets to its first real problem. SQL Server and Spark have the parameters of the `DATEDIFF` keyword in the opposite order to each other. Does ChatGPT know this?
+Now it gets to its first real challenge. SQL Server and Spark have the parameters of the `DATEDIFF` keyword in the opposite order to each other. Does ChatGPT know this?
 
 ![Datediff](/img/blog/datediff.png)
 
 Bravo! It reverses the arguments correctly.
+
+### Trough of Disillusionment
 
 ![Carry on again](/img/blog/carry_on_2.png)
 
@@ -49,10 +57,12 @@ The next issue is downright annoying. It says `Replace 'some_table' with the act
 
 I've given it all the information it needs. Why can't it finish the job? 
 
+### Slope of Enlightenment
+
 Instead, I need to decipher about 200 lines of code it's written and try to make it work since we're nowhere near finished. 
 And I'm not filled with confidence that it can see this task to the bitter end.
 At this point, I think I'm better off doing the whole thing myself.
 
-## Conclusion
+### Plateau of Productivity
 
 ChatGPT is great for simple snippets - a better [StackOverflow](https://stackoverflow.com/), perhaps. But is it going to revolutionise computer coding any time soon? Well, colour me disappointed.
