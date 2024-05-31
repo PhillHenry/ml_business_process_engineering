@@ -78,4 +78,4 @@ But is it going to revolutionise computer coding any time soon?
 Well, there is an adage in software engineering that [states](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule):
 > The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
 
-So, although these initial results are promising, engineers won't be out of a job any time soon.
+These initial results are promising but engineers won't be out of a job any time soon.
