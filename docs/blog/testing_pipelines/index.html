@@ -2,7 +2,7 @@
 
 <html lang="en">
 	<head>
-	  <title>Testing pipelines</title>
+	  <title>Data Pipeline or Super Sewer?</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="referrer" content="origin">
@@ -25,13 +25,15 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Testing pipelines"/>
-<meta name="twitter:description" content="A lot of practitioners wonder how to test pipelines - see this Discord thread. The best way we&rsquo;ve found is to create fixed, known data that when our transform acts on it, we can make reasonable assertions about what comes out.
-Synthetic data We are operating in the healthcare domain. We have a data set of events at hospitals and we want to turn them into a running total of patients who happen to occupy the hospital on any given day."/>
+<meta name="twitter:title" content="Data Pipeline or Super Sewer?"/>
+<meta name="twitter:description" content="There are many approaches to testing but if you&rsquo;re doing it manually, you&rsquo;re doing it wrong.
+The bedrock of science is continual testing. Yet a lot of practitioners wonder how to test data pipelines - see this Discord thread, for example.
+The best way we&rsquo;ve found is to create fixed, known data. When our transform then acts on it, we can make reasonable assertions about what comes out the other side."/>
 
-    <meta property="og:title" content="Testing pipelines" />
-<meta property="og:description" content="A lot of practitioners wonder how to test pipelines - see this Discord thread. The best way we&rsquo;ve found is to create fixed, known data that when our transform acts on it, we can make reasonable assertions about what comes out.
-Synthetic data We are operating in the healthcare domain. We have a data set of events at hospitals and we want to turn them into a running total of patients who happen to occupy the hospital on any given day." />
+    <meta property="og:title" content="Data Pipeline or Super Sewer?" />
+<meta property="og:description" content="There are many approaches to testing but if you&rsquo;re doing it manually, you&rsquo;re doing it wrong.
+The bedrock of science is continual testing. Yet a lot of practitioners wonder how to test data pipelines - see this Discord thread, for example.
+The best way we&rsquo;ve found is to create fixed, known data. When our transform then acts on it, we can make reasonable assertions about what comes out the other side." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/testing_pipelines/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-12-09T17:31:24+00:00" />
@@ -78,20 +80,22 @@ Synthetic data We are operating in the healthcare domain. We have a data set of 
 
 <article id="main">
   <header >
-    <h2>Testing pipelines</h2>
+    <h2>Data Pipeline or Super Sewer?</h2>
     
 	</header>
 	<section class="wrapper style5"  id="content">
 		<div class="inner">
-      <p><img src="/img/blog/rodion-kutsaiev-pipeline.jpg" alt="&ldquo;Rodion Kutsaiev&rsquo;s photo of pipelines&rdquo;"></p>
-<p>A lot of practitioners wonder how to test pipelines - see this <a href="https://discord.com/channels/566333122615181327/566333122615181333/1311277597468000337">Discord thread</a>. The best way we&rsquo;ve found is to create fixed, known data that when our transform acts on it, we can make reasonable assertions about what comes out.</p>
+      <p><em>There are many approaches to testing but if you&rsquo;re doing it manually, you&rsquo;re doing it wrong.</em></p>
+<p><img src="/img/blog/rodion-kutsaiev-pipeline.jpg" alt="&ldquo;Rodion Kutsaiev&rsquo;s photo of pipelines&rdquo;"></p>
+<p>The bedrock of science is continual testing. Yet a lot of practitioners wonder how to test data pipelines - see this <a href="https://discord.com/channels/566333122615181327/566333122615181333/1311277597468000337">Discord thread</a>, for example.</p>
+<p>The best way we&rsquo;ve found is to create fixed, known data. When our transform then acts on it, we can make reasonable assertions about what comes out the other side.</p>
 <h2 id="synthetic-data">Synthetic data</h2>
-<p>We are operating in the healthcare domain. We have a data set of events at hospitals and we want to turn them into a running total of patients who happen to occupy the hospital on any given day. Our test data should be:</p>
+<p>Here&rsquo;s a real world example in the healthcare domain. We have a data set of <em>events</em> at hospitals and we want to turn them into a <em>running total of patients</em> who happen to occupy the hospital on any given day. Our test data model should have:</p>
 <blockquote>
 <p>precisely <code>x</code> medical events over <code>D</code> days for <code>y</code> different unique patients, distributed evenly over hospitals <code>{a,b,c}</code> where each patient is admitted on day <code>i mod D</code> and discharged <code>i mod w</code> days later, where i is the unique patient id in range <code>[0,y]</code>.
 Finally, the discharge date is null every <code>z</code> patients because we know we have bad data (urgh).</p>
 </blockquote>
-<p>If we turn this natural language into a (Python) code signature, it looks like this:</p>
+<p>That&rsquo;s a bit of a mouthful but if we turn this natural language into a (Python) code signature, it looks something like this:</p>
 <pre tabindex="0"><code>def random_inpatient_data(
     num_rows: int,
     num_patients: int,
@@ -110,16 +114,16 @@ Finally, the discharge date is null every <code>z</code> patients because we kno
     :param start_time_fn: A function taking a date and a seed and generating a timestamp
     &#34;&#34;&#34;
 ...
-</code></pre><p>There&rsquo;s some things to note. First, that there are sensible defaults so our tests create the data with only the peculiarities salient to its needs. Secondly, the data is random-ish but the same for any given set of parameters.</p>
+</code></pre><p>There&rsquo;s some things to note. First, there are sensible defaults so our tests create the data with only the peculiarities salient to their needs. Second, the data is random-ish but the same for any given set of parameters.</p>
 <p>It all sounds a little complicated but the whole thing is some two dozen lines that&rsquo;s called repeatedly across the test suite.</p>
 <h2 id="the-assertions">The assertions</h2>
 <p>There are certain invariants we can assert on. Some are straightforward like the hospital occupancy must be always be equal or greater than zero; or that the number of admissions for a day must always be less or equal to the running total for that day.</p>
-<p>Some are a little more involved, for instance the sum of daily occupancy deltas over the time frame is zero (ie, everybody who is admitted is ultimately discharged). Obviously the algorithm must be robust and not count zombie patients who appear to be never discharged - remember that &ldquo;the discharge date is null every z patients&rdquo; above?</p>
+<p>Some are a little more involved, for instance the sum of daily occupancy deltas over the time frame is zero (ie, everybody who is admitted is ultimately discharged). Obviously the algorithm must be robust and not count zombie patients who appear to be never discharged - remember that <em>&ldquo;the discharge date is null every z patients&rdquo;</em> above?</p>
 <p>Another invariant is that we should have a reading for all days in a contiguous block. Remember that the input data is a series of events. If 10 patients are admitted on Monday and 5 are dischared on Friday and noting happens on Tuesday to Thursday, do we still have readings for those dates even though nothing happened? (We should)</p>
-<p>Crafting the test data also raised some interesting corner cases that we needed to take back to the business analysts. For example. if a patient is discharged the same day they&rsquo;re admitted, do they show up on that day&rsquo;s occupancy numbers or not? If the discharge date is null what do we do with this patient?</p>
+<p>Crafting the test data also raised some interesting corner cases that we needed to take back to the business analysts. For example. if a patient is discharged the same day they&rsquo;re admitted, do they show up on that day&rsquo;s occupancy numbers or not? If the discharge date is null what do we do with this patient? etc.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>The use of synthetic data is a powerful tool when building automated regression tests. Tools like <a href="https://github.com/awslabs/deequ">Deequ</a> can test data quality but require a curated data sets. This is much harder than it sounds especially when their schemas and semantics change.</p>
-<p>Creating code that tests the functionality of your pipeline allows you to refactor your code with confidence. Once you try it, you&rsquo;ll never go back.</p>
+<p>Creating code that tests the functionality of your pipeline allows you to refactor your code with confidence. Once you try it, you&rsquo;ll never go back to data sewers.</p>
 
 		</div>
 	</section>
