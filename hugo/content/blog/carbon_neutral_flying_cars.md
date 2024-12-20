@@ -41,3 +41,18 @@ During that time, consultants were telling their clients that, if they paid them
 Nobody was making any money by being reasonable. 
 That's how I successfully remained poor during the biggest boom in my lifetime. 
 ("And remember to click _like_ and _subscribe_ for more of my great career advice").
+
+What we're currently experiencing in this industry is DotCom v2.0. Be realistic about what can be achieved by an ML project. You'll sleep better.
+
+### Quid Est Veritas?
+
+Software is binary and generally speaking so are software projects. 
+It either works or it fails. 
+Of course, there is more nuance to this in the real world but it's generally clear when something is wrong.
+
+Machine learning is more subtle. 
+If the bank's customers themselves in the example above don't know how to classify their own transactions, how can your machine learning pipeline?
+
+Feel free to fall in love with your work.
+The ancient Greeks knew about this phenomena and gave us the story of [Pygmalion](https://en.wikipedia.org/wiki/Pygmalion_(mythology)) who fell in love with his own sculpture.
+It all ended well for Pygmalion but if you're going to fall in love with a model, set boundaries.
