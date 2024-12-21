@@ -1,5 +1,5 @@
 +++
-title = 'Carbon Neutral Flying Cars... For Everyone!'
+title = 'When you fall in love with a model'
 date = 2024-12-20T10:56:38Z
 draft = true
 +++
@@ -40,10 +40,15 @@ Why should they?
 That's not how they make their money.
 
 I'm old enough to have been part of the DotCom boom in the 90s. 
-During that time, consultants were telling their clients that, if they paid them lots of money, they would have a multi billion dollar IPO in no time. 
+Consultants back then were telling their clients that, if they paid them lots of money, they would have a multi billion dollar IPO in no time. 
 Nobody was making any money by being reasonable. 
-That's how I successfully remained poor during the biggest boom in my lifetime. 
+That's how I successfully remained poor during the biggest econominc boom in my lifetime. 
+
 ("And remember to click _like_ and _subscribe_ for more of my great career advice").
+
+Similarly, it's clear that some people today are building internal corporate empires by promising their new team, department or project is going to shake their industry to its foundations.
+Without success criteria that are agreed up-front, how can they be proved wrong?
+When there is no strict criteria for truth, charlatans thrive - homeopaths, fortune tellers, economists - you know the types.
 
 What we're currently experiencing in this industry is DotCom v2.0. So, be realistic about what can be achieved by an ML project. You'll sleep better.
 
