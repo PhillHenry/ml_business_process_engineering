@@ -39,10 +39,10 @@ There are very few consultants out there telling clients that their idea for a m
 Why should they? 
 That's not how they make their money.
 
-I'm old enough to have been part of the DotCom boom in the 90s. 
+I'm old enough to have been part of the Dotcom boom in the 90s. 
 Consultants back then were telling their clients that, if they paid them lots of money, they would have a multi billion dollar IPO in no time. 
 Nobody was making any money by being reasonable. 
-That's how I successfully remained poor during the biggest econominc boom in my lifetime. 
+That's how I successfully remained poor during the biggest economic boom in my lifetime. 
 
 ("And remember to click _like_ and _subscribe_ for more of my great career advice").
 
@@ -50,7 +50,7 @@ Similarly, it's clear that some people today are building internal corporate emp
 Without success criteria that are agreed up-front, how can they be proved wrong?
 When there is no strict criteria for truth, charlatans thrive - homeopaths, fortune tellers, economists - you know the types.
 
-What we're currently experiencing in this industry is DotCom v2.0. So, be realistic about what can be achieved by an ML project. You'll sleep better.
+What we're currently experiencing in this industry is Dotcom v2.0. So, be realistic about what can be achieved by an ML project. You'll sleep better.
 
 ### “This is my truth, tell me yours.”
 
