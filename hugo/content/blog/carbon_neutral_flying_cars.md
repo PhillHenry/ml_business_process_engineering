@@ -6,7 +6,7 @@ draft = true
 _"The first principle is that you must not fool yourself and you are the easiest person to fool."_ -  
 Richard Feynman, Nobel physicist
 
-!["Ray Harringtons's photo of a flying car"](/img/blog/flying_car.jpg)
+!["Pygmalion"](/img/blog/pygmalion.jpg)
 
 Carbon-neutral flying cars are an admiral goal but are they realistic? Be honest with yourself about what you can reasonably achieve with AI.
 
