@@ -1,5 +1,5 @@
 +++
-title = 'Testing pipleines'
+title = 'Testing pipelines'
 date = 2024-12-09T17:31:24Z
 draft = true
 +++
