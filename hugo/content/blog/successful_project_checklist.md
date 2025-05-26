@@ -5,8 +5,11 @@ draft = true
 +++
 
 Requirements
+
 Automated tests
+
 Expectations
+
 CICD
 
 
@@ -70,3 +73,4 @@ This is a tricky situation and you'll have to establish your own processes to pr
 
 * **Documentation**
 
+Documentation quickly falls out of synch so automated this as much as possible. There are many BDD frameworks out there that help keep your docs in lockstep with your code. I strongly recommend you use one.
